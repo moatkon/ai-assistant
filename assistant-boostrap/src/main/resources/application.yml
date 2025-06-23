@@ -1,0 +1,15 @@
+server:
+  port: 2025
+spring:
+  application:
+    name: ai-assistant
+  ai:
+    openai:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      api-key: ${DASHSCOPE_API_KEY:dev}
+      chat:
+        options:
+          model: qwen-plus
+    mcp:
+      client:
+        enabled: false
